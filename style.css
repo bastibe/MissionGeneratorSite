@@ -1,0 +1,36 @@
+body {
+    max-width: 950px;
+    margin: auto;
+    padding: 25px;
+}
+header h2 {
+    font-size: larger;
+    font-weight: normal;
+}
+#overview {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2%;
+}
+#overview .third {
+    width: 30%;
+    margin: 1%;
+}
+#overview p {
+    width: 100%;
+}
+.sidebyside {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    padding: 5px;
+}
+.sidebyside img {
+    max-width: 50%;
+    max-height: 400px;
+    margin: 5px;
+}
+.sidebyside .half {
+    width: 50%;
+    margin: 5px;
+}

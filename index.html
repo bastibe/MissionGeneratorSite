@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mission Generator</title>
+  <meta name="author" content="Bastian Bechtold">
+  <meta name="referrer" content="no-referrer">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <h1>Mission Generator</h1>
+    <h2>A plugin for X-Plane</h2>
+  </header>
+  <section id="overview">
+    <p>You don't know where to fly? You need a motivation to climb into
+      your cockpit and take off into the wild blue yonder? You yearn for
+      a story to go with your flight simulator? Then the Mission Generator is for you! Select your favorite airplane, go to your favorite airport, and let the Mission Generator take you on an adventure!</p>
+    <div class="third">
+      <h1>What it is</h1>
+      <p>The Mission Generator is a plugin for X-Plane 11 and 10 that
+        creates missions, and rewards you for flying them. It prompts
+        you to visit new places, and challenges your flying skill with
+        bonus objectives.</p>
+      <p>After completing a mission, you are debriefed with an
+        evaluation of your take-off and landing, and earn experience
+        points. With enough experience, you can level up, and customize
+        missions to your preferred mode of flying.</p>
+      <p>Missions are always tailored to your current aircraft and
+        location, and take into account any add-on you installed. Beyond
+        that, it includes a database of landmarks for sightseeing
+        missions!</p>
+    </div>
+    <div class="third">
+      <h1>Getting it</h1>
+      <p>You can buy the plugin on the X-Plane.org store. The plugin
+        works in X-Plane 11 and 10, on Windows, macOS, and Linux.</p>
+      <p>You will get a zip-file containing a single directory, which
+        must be installed in your <code>X-Plane\Resources\plugins\</code>
+        directory. Once installed, you will see a new menu "Mission
+        Generator" in your "Plugins" Menu, from which you can open the
+        Mission List and change preferences.</p>
+      <p>The Mission Generator is written in Lua with SASL, and is built
+        to be understood and changed. If you don't like any aspect of
+        the plugin, feel free to have a look at the source code, and
+        change it to suit your needs!</p>
+    </div>
+    <div class="third">
+      <h1>What it is not</h1>
+      <ul>
+        <li>Money. You do not earn money, there are no maintenance fees,
+          and you don't have to pay for airplanes. You already have a
+          stressful life, and don't need a plugin to make it worse.</li>
+        <li>FSX. There is no voice-over, no custom scenery, and no
+          changing of mission objectives after take-off. Instead, you
+          get an infinite number of randomly generated missions for
+          every scenery and airplane you install.</li>
+        <li>Punishment. The Mission Generator will never punish you for
+          what you do. You can cancel missions at any time, and still
+          get some experience points. You can mess up a landing, and
+          still get rewards.</li>
+      </ul>
+    </div>
+  </section>
+  <section class="sidebyside">
+    <img src="mission list.png"/>
+    <div class="half">
+      <p>Load an aircraft, select an airport, set your weather, then
+        open the <em>Mission List</em>. Each mission is created for your
+        current aircraft and the current airport, and tailored to the
+        level ups you selected with your experience points.</p>
+      <p>Missions are generated deterministically once per day, so you
+        can restart X-Plane without losing your current missions.</p>
+    </div>
+  </section>
+  <section class="sidebyside">
+    <div class="half">
+      <p>Click a mission, and you get a <em>Mission Briefing</em>. Each
+        briefing gives you a short description of what the mission is
+        all about, where you need to go, and some information on the
+        destination airport.</p>
+      <p>The mission text is randomly generated from a set of templates.
+        If you would like to add your own templates, you can do so by
+        editing one simple text file.</p>
+      <p>The Mission Generator reads the current weather and scenery to
+        figure out whether the mission is VFR or IFR, whether the
+        scenery around the airports is mountainous or coastal, and
+        whether the runways are suitable for your current aircraft. All
+        of these data will determine the amount of experience points you
+        get for a mission.</p>
+    </div>
+    <img src="mission briefing.png"/>
+  </section>
+  <section class="sidebyside">
+    <img src="special missions.png"/>
+    <div class="half">
+      <p>Some missions will have a <em>Bonus Objective</em> that gives bonus
+        experience points, such as:</p>
+      <ul>
+        <li>Low flight, stay below a certain altitude,</li>
+        <li>Fast flight, reach your destination before a timer runs out,</li>
+        <li>Fragile flight, take-off and land smoothly or break your cargo,</li>
+        <li>Unreliable flight, where something might go wrong in mid-flight,</li>
+        <li>Sightseeing, show your passengers a nearby landmark before landing.</li>
+      </ul>
+    </div>
+  </section>
+  <section class="sidebyside">
+    <div class="half">
+      <p>Once you complete your mission, you get a
+        detailed <em>Debriefing</em>. This includes an evaluation of
+        your take-off, your landing, the time you took to get to the
+        destination, and any difficulties, like IFR conditions, severe
+        wind, rain, bad runway conditions, and of course the mission
+        objectives.</p>
+      <p>You will also get a slight experience point reduction for using
+        the auto pilot or time compression, because flying by hand is
+        just more fun and challenging than having the computer do it.
+        But if you don't like this, that's ok, too, and you can either
+        level up your Time Compression and Autopilot skills, or disable
+        these features entirely in the preferences.</p>
+      <p>Of course, all your previews flights are saved in a logbook on
+        your computer.</p>
+    </div>
+    <img src="debriefing.png"/>
+  </section>
+  <section class="sidebyside">
+    <img src="pilot profile.png"/>
+    <div class="half">
+      <p>Once you have gathered enough experience points, it is time to
+        go to your <em>Pilot Profile</em>, and level up!</p>
+      <p>You can put points in a variety of different mission
+        categories, which makes these kinds of missions happen more
+        frequently, and increases your rewards for doing them.</p>
+      <p>If you don't like the rewards for the level-ups, all of them
+        are defined in a simple text file, so you can change them to
+        your liking!</p>
+    </div>
+  </section>
+  <section class="sidebyside">
+    <div class="half">
+      <p>Finally, the Mission Generator includes a <em>Preferences</em>
+        menu, from which you can select between metric and imperial
+        units, disable the autopilot and time compression penalties, and
+        select whether the debriefing appears shortly after touch down,
+        or only once the parking brake has been engaged.</p>
+    </div>
+    <img src="preferences.png"/>
+  </section>
+</body>
+</html>
