@@ -61,6 +61,7 @@ header h2 {
     padding: 5px;
 }
 .sidebyside img {
+    object-fit: contain;
     max-width: 50%;
     max-height: 400px;
     margin: 5px;
