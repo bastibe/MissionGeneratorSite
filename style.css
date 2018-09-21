@@ -9,25 +9,38 @@
     src: url(OpenSans-CondLight.woff2);
 }
 
+html {
+    background: #f8f8f8;
+}
+
 body {
     max-width: 950px;
-    margin: auto;
+    margin: 20px auto 20px;
+    box-shadow: 0px 0px 2px lightgrey;
     padding: 25px;
     font-family: "Open Sans Regular", sans-serif;
+    background: white;
 }
 
 header h1 {
     font-size: 250%;
     font-family: "Open Sans Condensed", sans-serif;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 header h2 {
     font-size: larger;
     font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 28px;
 }
 #overview {
     display: flex;
     flex-flow: row wrap;
     padding: 2%;
+}
+#introduction {
+    font-size: large;
 }
 #overview .third {
     width: 30%;
@@ -35,6 +48,7 @@ header h2 {
 }
 #overview p {
     width: 100%;
+    margin-top: 0px;
 }
 #overview h1 {
     font-size: x-large;
