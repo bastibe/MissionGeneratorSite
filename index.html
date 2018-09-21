@@ -151,5 +151,44 @@
     </div>
     <img src="preferences.png"/>
   </section>
+  <hr>
+  <section id="extension">
+    <h1>Change how it works</h1>
+    <p>All the code that makes the Mission Generator work is written in
+      simple text files that you can change to your liking. There is no
+      hidden compiled code or encrypted secrets, everything is written
+      in editable Lua scripts using the SASL library.</p>
+    <p>In particular, here are a few files you might find useful:</p>
+    <ul>
+      <li><code>MissionGenerator\profile.lua</code> contains your pilot
+        profile and all the level ups you spent. If you want to undo a
+        few levels, or experiment with different levels, edit this
+        file.</li>
+      <li><code>MissionGenerator\data\modules\3rd-party\cities.csv</code>
+        and <code>MissionGenerator\modules\3rd-party\mountains.csv</code>
+        contain a list of all cities and mountains for sightseeing
+        missions. Add your own sightseeing destinations here if you
+        like.</li>
+      <li><code>MissionGenerator\data\modules\3rd-party\levels.lua</code>
+        contains the bonuses you get for level ups. If you like missions
+        to give greater rewards, edit this file.</li>
+      <li><code>MissionGenerator\data\modules\3rd-party\templates.lua</code>
+        contains the template texts used to generate mission briefings.
+        Edit this to create your own mission texts!</li>
+      <li><code>MissionGenerator\data\modules\3rd-party\bonusmissions.lua</code>
+        contains the implementation of all bonus objectives. You need to
+        know a bit of programming to add your own: Create a new
+        sub-class of `BonusMission`, and implement at least `start`,
+        `name`, `text`, and `finish`, and append it to the list at the
+        end of the file to add a new bonus mission type.</li>
+    </ul>
+    <p>If you change something that others might find useful, please
+      share it back to the community. Please note that publishing your
+      own versions of the whole plugin is software piracy, and not
+      allowed. But, I hereby give you express permission to publish
+      changed versions of the above files. Or better yet, email me at
+      missiongenerator :at: mailbox :dot: org, and I might just include
+      your changes in the next version of the Mission Generator!</p>
+  </section>
 </body>
 </html>

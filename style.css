@@ -69,3 +69,14 @@ header h2 {
     width: 50%;
     margin: 5px;
 }
+#extension h1 {
+    font-size: x-large;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+#extension code {
+    font-size: larger;
+}
+#extension ul {
+    max-width: 80%;
+    margin: auto;
+}
