@@ -37,7 +37,7 @@ header h2 {
 header a {
     margin: 3em 5px 0px 5px;
     padding: 5px;
-    box-shadow: 0px 0px 1px grey;
+    outline: 1px solid lightgrey;
     float: right;
     text-decoration: none;
 }
@@ -113,13 +113,13 @@ section h1 {
 }
 .navigation .next {
     padding: 5px;
-    box-shadow: 0px 0px 1px grey;
+    outline: 1px solid lightgrey;
     float: right;
     text-decoration: none;
 }
 .navigation .prev {
     padding: 5px;
-    box-shadow: 0px 0px 1px grey;
+    outline: 1px solid lightgrey;
     float: left;
     text-decoration: none;
 }
