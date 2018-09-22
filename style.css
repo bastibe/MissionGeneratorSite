@@ -47,6 +47,10 @@ header a:link {
 header a:visited {
     color: #444;
 }
+section h1 {
+    font-size: x-large;
+    font-family: "Open Sans Condensed", sans-serif;
+}
 #overview {
     display: flex;
     flex-flow: row wrap;
