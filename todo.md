@@ -1,5 +1,5 @@
 - [ ] Logo and Favicon
-- [ ] News + RSS
-- [ ] About Me
-- [ ] Privacy Notice
+- [x] News + RSS
+- [x] About Me
+- [x] Privacy Notice
 - [x] Fix third image
