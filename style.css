@@ -34,6 +34,19 @@ header h2 {
     margin-top: 0px;
     margin-bottom: 28px;
 }
+header a {
+    margin: 3em 5px 0px 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 1px grey;
+    float: right;
+    text-decoration: none;
+}
+header a:link {
+    color: #444;
+}
+header a:visited {
+    color: #444;
+}
 #overview {
     display: flex;
     flex-flow: row wrap;
@@ -80,4 +93,35 @@ header h2 {
 #extension ul {
     max-width: 80%;
     margin: auto;
+}
+.post .title {
+    font-size: x-large;
+    font-family: "Open Sans Condensed", sans-serif;
+    margin-bottom: 0px;
+}
+.post .date {
+    font-size: small;
+    font-weight: normal;
+    margin-top: 0px;
+}
+.navigation {
+    height: 2em;
+}
+.navigation .next {
+    padding: 5px;
+    box-shadow: 0px 0px 1px grey;
+    float: right;
+    text-decoration: none;
+}
+.navigation .prev {
+    padding: 5px;
+    box-shadow: 0px 0px 1px grey;
+    float: left;
+    text-decoration: none;
+}
+.navigation a:link {
+    color: #444;
+}
+.navigation a:visited {
+    color: #444;
 }
