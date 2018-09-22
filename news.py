@@ -76,6 +76,7 @@ for idx, posts in enumerate(pages):
   <title>Mission Generator News</title>
   <meta name="author" content="Bastian Bechtold">
   <meta name="referrer" content="no-referrer">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -85,6 +86,7 @@ for idx, posts in enumerate(pages):
     <a href="about.html">About Me</a>
     <a href="news0.html">News</a>
     <a href="index.html">Home</a>
+    <img src="icon.png"/>
     <h1>Mission Generator</h1>
     <h2>A plugin for X-Plane</h2>
   </header>
@@ -116,3 +118,5 @@ for idx, posts in enumerate(pages):
 </body>
 </html>
 ''')
+
+# magick icon.png -resize 64x64 favicon.ico

@@ -1,4 +1,4 @@
-- [ ] Logo and Favicon
+- [x] Logo and Favicon
 - [x] News + RSS
 - [x] About Me
 - [x] Privacy Notice

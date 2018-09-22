@@ -27,12 +27,18 @@ header h1 {
     font-family: "Open Sans Condensed", sans-serif;
     margin-bottom: 0px;
     margin-top: 10px;
+    margin-left: 100px;
 }
 header h2 {
     font-size: larger;
     font-weight: normal;
     margin-top: 0px;
     margin-bottom: 28px;
+    margin-left: 100px;
+}
+header img {
+    position: absolute;
+    width: 80px;
 }
 header a {
     margin: 3em 5px 0px 5px;
