@@ -93,6 +93,9 @@ section h1 {
     width: 50%;
     margin: 5px;
 }
+.sidebyside .half img {
+    max-width: 100%;
+}
 #extension h1 {
     font-size: x-large;
     font-family: "Open Sans Condensed", sans-serif;
