@@ -50,10 +50,10 @@
         directory. Once installed, you will see a new menu "Mission
         Generator" in your "Plugins" Menu, from which you can open the
         Mission List and change preferences.</p>
-      <p>The Mission Generator is written in Lua with SASL, and is built
-        to be understood and changed. If you don't like any aspect of
-        the plugin, feel free to have a look at the source code, and
-        change it to suit your needs!</p>
+      <p>The Mission Generator is written in Lua with SASL, and its
+        code is built to be understood and changed. If you don't like
+        any aspect of the plugin, feel free to have a look at the
+        source code, and change it to suit your needs!</p>
     </div>
     <div class="third">
       <h1>What it is not</h1>
@@ -129,7 +129,7 @@
         But if you don't like this, that's ok, too, and you can either
         level up your Time Compression and Autopilot skills, or disable
         these features entirely in the preferences.</p>
-      <p>Of course, all your previews flights are saved in a logbook on
+      <p>Of course, all your completed flights are saved in a logbook on
         your computer.</p>
     </div>
     <img src="debriefing.png"/>
@@ -172,29 +172,39 @@
         file.</li>
       <li><code>MissionGenerator\data\modules\3rd-party\cities.csv</code>
         and <code>MissionGenerator\modules\3rd-party\mountains.csv</code>
-        contain a list of all cities and mountains for sightseeing
+        contain a list of all the cities and mountains for sightseeing
         missions. Add your own sightseeing destinations here if you
         like.</li>
       <li><code>MissionGenerator\data\modules\3rd-party\levels.lua</code>
         contains the bonuses you get for level ups. If you like missions
-        to give greater rewards, edit this file.</li>
+        to give greater or lesser rewards, edit this file.</li>
       <li><code>MissionGenerator\data\modules\3rd-party\templates.lua</code>
         contains the template texts used to generate mission briefings.
         Edit this to create your own mission texts!</li>
       <li><code>MissionGenerator\data\modules\3rd-party\bonusmissions.lua</code>
-        contains the implementation of all bonus objectives. You need to
-        know a bit of programming to add your own: Create a new
-        sub-class of `BonusMission`, and implement at least `start`,
-        `name`, `text`, and `finish`, and append it to the list at the
-        end of the file to add a new bonus mission type.</li>
+        contains all bonus objectives. You need to know a bit of
+        programming to add your own: Create a new sub-class of
+        <code>BonusMission</code>, and implement at
+        least <code>start</code>, <code>name</code>, <code>text</code>,
+        and <code>finish</code>, and append it to the list at the end of
+        the file to add a new bonus mission type.</li>
     </ul>
     <p>If you change something that others might find useful, please
-      share it back to the community. Please note that publishing your
-      own versions of the whole plugin is software piracy, and not
-      allowed. But, I hereby give you express permission to publish
-      changed versions of the above files. Or better yet, email me at
+      share it back to the community. Be aware that publishing your own
+      versions of the whole plugin is software piracy, and not allowed.
+      But, I hereby give you express permission to publish changed
+      versions of the above files. Or better yet, email them to me at
       missiongenerator :at: mailbox :dot: org, and I might just include
       your changes in the next version of the Mission Generator!</p>
+  </section>
+  <hr>
+  <section>
+    <h1>Bug Reports and Feature Requests</h1>
+    <p>Software is never perfect, and the Mission Generator is no
+      different. Even though we conducted an extensive beta test, the
+      plugin still might contain bugs. If you find a bug, or want to
+      discuss an idea for a new feature, please contact me at
+      missiongenerator :at: mailbox :dot: org.</p>
   </section>
 </body>
 </html>
