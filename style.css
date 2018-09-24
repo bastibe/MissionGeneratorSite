@@ -138,3 +138,6 @@ section h1 {
 .navigation a:visited {
     color: #444;
 }
+.box {
+    background-color: #eee;
+}
