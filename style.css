@@ -141,3 +141,16 @@ section h1 {
 .box {
     background-color: #eee;
 }
+footer {
+    width: 100%;
+}
+footer .center {
+    margin: auto;
+    text-align: center;
+}
+footer a:link {
+    color: #444;
+}
+footer a:visited {
+    color: #444;
+}

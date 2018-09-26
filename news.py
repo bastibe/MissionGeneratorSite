@@ -115,6 +115,11 @@ for idx, posts in enumerate(pages):
         html.write('  </section>\n')
 
         html.write('''
+<footer>
+  <div class="center">
+    <a href="news.xml">Subscribe via RSS</a>
+  </div>
+</footer>
 </body>
 </html>
 ''')
