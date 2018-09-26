@@ -167,7 +167,32 @@
     <img src="preferences.png"/>
   </section>
   <hr>
-  <section id="extension">
+  <section class="fullwidth">
+    <h1>How it works</h1>
+    <p>The Mission Generator generates plausible missions, that fit your
+      current aircraft, weather, and airport. To do this, it reads
+      X-Plane's datarefs, and figures out what kind of aircraft you are
+      flying. Then, it probes the X-Plane scenery database for airports
+      around the current location, that fit the current mission
+      profile.</p>
+    <p>Since these operations rely on X-Plane's own scenery database and
+      aircraft datarefs, they are always up-to-date with any add-on you
+      have installed. However, the X-Plane plugin API does not provide
+      all the information necessary for generating plausible missions.
+      For example, it does not contain information on runways,
+      mountains, or sightseeing destinations.</p>
+    <p>These data are then read from its own databases: The plugin has
+      its own database of runways (derived from X-Plane's apt.dat), its
+      own global elevation dataset, and a database of sightseeing
+      landmarks.</p>
+    <p>With all this data available, the Mission Generator can create
+      plausible missions that fit your current aircraft, and the level
+      ups you put into your pilot profile. To keep it fresh, however,
+      there always remains an element of randomness, and a bit of
+      humor.</p>
+  </section>
+  <hr>
+  <section class="fullwidth">
     <h1>Change how it works</h1>
     <p>All the code that makes the Mission Generator work is written in
       simple text files that you can change to your liking. There is no

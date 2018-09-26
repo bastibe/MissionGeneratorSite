@@ -96,14 +96,14 @@ section h1 {
 .sidebyside .half img {
     max-width: 100%;
 }
-#extension h1 {
+.fullwidth h1 {
     font-size: x-large;
     font-family: "Open Sans Condensed", sans-serif;
 }
-#extension code {
+.fullwidth code {
     font-size: larger;
 }
-#extension ul {
+.fullwidth ul {
     max-width: 80%;
     margin: auto;
 }
