@@ -4,7 +4,36 @@
 <title>Mission Generator News</title>
 <description>News for the Mission Generator plugin for X-Plane</description>
 <link>https://missiongenerator.eu/news0.html</link>
-<lastBuildDate>Sat, 22 Sep 2018 11:25:08 </lastBuildDate>
+<lastBuildDate>Wed, 26 Sep 2018 16:59:45 </lastBuildDate>
+
+  <item>
+    <title>The code</title>
+    <pubDate>Wed, 26 Sep 2018 00:00:00 </pubDate>
+    <description><![CDATA[
+<p>The last few days I spent cleaning up the Mission Generator's code, and
+documenting it thoroughly. One could argue that no-one will look at the
+code of an X-Plane plugin, anyway, so why document it?</p>
+<p>But I plan that the initial release of the Mission Generator will only
+the first step in a long development. Which means that I will work with
+this code for a long time. Spending some effort now to help future me,
+who will have forgotten half the intricacies of the Mission Generator,
+is time well spent.</p>
+<p>But beyond that, I hope that other people will look at the code, and try
+to improve things. While the Mission Generator is a commercial piece of
+software, I give every user express permission to publish improved
+versions of a few key files. This might, for example, include more
+varied bonus missions, or more mission templates, or re-balanced
+versions of the level ups.</p>
+<p>I also hope that the Mission Generator will encourage people to develop
+their own plugins. As it turns out, writing plugins for X-Plane is not
+hard (if you know programming). There are a lot of intricate and
+interesting algorithms in the Mission Generator, and all of them are now
+well-documented for intrepid readers.</p>
+<p>And of course, old habits die hard. I always try to maintain as good a
+code quality as I can in <a href="https://github.com/bastibe">my programming projects</a>.</p>
+    ]]>
+    </description>
+  </item>
 
   <item>
     <title>Getting the Mission Generator ready for release</title>
