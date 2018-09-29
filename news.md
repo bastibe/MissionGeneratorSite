@@ -1,4 +1,22 @@
 ------------------------------------------------------------------------
+title: Released!
+date: 2018-09-29
+
+The Mission Generator for X-Plane has been released on the X-Plane.org
+store! You can [buy it now for $15](https://store.x-plane.org/Mission-Generator_p_877.html)!
+
+Additionally, we now have a [forum
+topic](https://forums.x-plane.org/index.php?/forums/forum/430-mission-generator/)
+for release announcements, discussions, and bug reports, which is
+exciting!
+
+Thank you very much for your support during the development of this
+plugin. In particular, I would like to thank the beta testers, whose
+comments improved many aspects of the plugin. And I would like to
+thank all the nice commenters on the forums. You have no idea how
+motivating a few positive remarks can be!
+
+------------------------------------------------------------------------
 title: The code
 date: 2018-09-26
 
