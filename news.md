@@ -1,4 +1,26 @@
 ------------------------------------------------------------------------
+title: First Patch
+date: 2018-09-30
+
+I just uploaded a quick bug fix for the most important issues in the
+release. This bug fix release contains:
+
+- Corrected payload generation (should no longer try to cram ten 20kg
+  people into a five-seat aircraft)
+- Take-offs from non-default add-on airports no longer messes up the
+  Mission Generator.
+- Adds some logging, which should make debugging easier in case you find
+  more problems.
+
+There is still a known issue with add-on airports that change the runway
+layout of default airports. In this case, you might get an incorrect
+landing centerline deviation. I am working to fix that, but it is a
+major undertaking which will take a while.
+
+If you find more bugs, please post them to the [Mission Generator forum
+topic](https://forums.x-plane.org/index.php?/forums/forum/430-mission-generator/).
+
+------------------------------------------------------------------------
 title: Released!
 date: 2018-09-29
 

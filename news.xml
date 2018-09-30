@@ -4,7 +4,31 @@
 <title>Mission Generator News</title>
 <description>News for the Mission Generator plugin for X-Plane</description>
 <link>https://missiongenerator.eu/news0.html</link>
-<lastBuildDate>Sat, 29 Sep 2018 09:23:40 </lastBuildDate>
+<lastBuildDate>Sun, 30 Sep 2018 15:42:57 </lastBuildDate>
+
+  <item>
+    <title>First Patch</title>
+    <pubDate>Sun, 30 Sep 2018 00:00:00 </pubDate>
+    <description><![CDATA[
+<p>I just uploaded a quick bug fix for the most important issues in the
+release. This bug fix release contains:</p>
+<ul>
+<li>Corrected payload generation (should no longer try to cram ten 20kg
+  people into a five-seat aircraft)</li>
+<li>Take-offs from non-default add-on airports no longer messes up the
+  Mission Generator.</li>
+<li>Adds some logging, which should make debugging easier in case you find
+  more problems.</li>
+</ul>
+<p>There is still a known issue with add-on airports that change the runway
+layout of default airports. In this case, you might get an incorrect
+landing centerline deviation. I am working to fix that, but it is a
+major undertaking which will take a while.</p>
+<p>If you find more bugs, please post them to the <a href="https://forums.x-plane.org/index.php?/forums/forum/430-mission-generator/">Mission Generator forum
+topic</a>.</p>
+    ]]>
+    </description>
+  </item>
 
   <item>
     <title>Released!</title>
