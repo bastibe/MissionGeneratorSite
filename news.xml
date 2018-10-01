@@ -4,7 +4,40 @@
 <title>Mission Generator News</title>
 <description>News for the Mission Generator plugin for X-Plane</description>
 <link>https://missiongenerator.eu/news0.html</link>
-<lastBuildDate>Sun, 30 Sep 2018 15:42:57 </lastBuildDate>
+<lastBuildDate>Mon, 01 Oct 2018 08:41:09 </lastBuildDate>
+
+  <item>
+    <title>Second Patch (v1.0.2)</title>
+    <pubDate>Mon, 01 Oct 2018 00:00:00 </pubDate>
+    <description><![CDATA[
+<ul>
+<li>Fixes debriefing issue (thank you, shaja, for finding and <a href="https://forums.x-plane.org/index.php?/forums/topic/159020-not-recognizing-completed-missions/&amp;do=findComment&amp;comment=1495812">fixing</a> it!)</li>
+</ul>
+    ]]>
+    </description>
+  </item>
+
+  <item>
+    <title>That Centerline Issue</title>
+    <pubDate>Mon, 01 Oct 2018 00:00:00 </pubDate>
+    <description><![CDATA[
+<p>Some people are seeing an issue where the Takeoff centerline deviation
+and landing centerline deviation are wildly off. This is caused by
+add-on airports, or an updated apt.dat, which moved the runway
+locations.</p>
+<p>Since X-Plane does not give plugins information about the locations of
+runways, the Mission Generator has its own database of runway locations,
+derived from X-Plane's default apt.dat. Thus, if an add-on moves the
+runway locations, the Mission Generator won't know about it, and will
+assume you landed in the wheeds.</p>
+<p>To fix this, I will add a new menu option to rebuild the scenery
+database in a future update. But this is a bigger undertaking, and will
+take a few days.</p>
+<p>As a nice side benefit, this will make completely new add-on airports
+available as mission targets as well.</p>
+    ]]>
+    </description>
+  </item>
 
   <item>
     <title>First Patch</title>

@@ -1,4 +1,32 @@
 ------------------------------------------------------------------------
+title: Second Patch (v1.0.2)
+date: 2018-10-01
+
+- Fixes debriefing issue (thank you, shaja, for finding and [fixing](https://forums.x-plane.org/index.php?/forums/topic/159020-not-recognizing-completed-missions/&do=findComment&comment=1495812) it!)
+
+------------------------------------------------------------------------
+title: That Centerline Issue
+date: 2018-10-01
+
+Some people are seeing an issue where the Takeoff centerline deviation
+and landing centerline deviation are wildly off. This is caused by
+add-on airports, or an updated apt.dat, which moved the runway
+locations.
+
+Since X-Plane does not give plugins information about the locations of
+runways, the Mission Generator has its own database of runway locations,
+derived from X-Plane's default apt.dat. Thus, if an add-on moves the
+runway locations, the Mission Generator won't know about it, and will
+assume you landed in the wheeds.
+
+To fix this, I will add a new menu option to rebuild the scenery
+database in a future update. But this is a bigger undertaking, and will
+take a few days.
+
+As a nice side benefit, this will make completely new add-on airports
+available as mission targets as well.
+
+------------------------------------------------------------------------
 title: First Patch
 date: 2018-09-30
 

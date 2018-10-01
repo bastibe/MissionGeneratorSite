@@ -27,6 +27,33 @@
   <hr>
 
   <section class='post'>
+    <h1 class='title'>Second Patch (v1.0.2)</h1>
+    <h2 class='date'>2018-10-01</h2>
+    <ul>
+    <li>Fixes debriefing issue (thank you, shaja, for finding and <a href="https://forums.x-plane.org/index.php?/forums/topic/159020-not-recognizing-completed-missions/&amp;do=findComment&amp;comment=1495812">fixing</a> it!)</li>
+    </ul>
+  </section>
+
+  <section class='post'>
+    <h1 class='title'>That Centerline Issue</h1>
+    <h2 class='date'>2018-10-01</h2>
+    <p>Some people are seeing an issue where the Takeoff centerline deviation
+    and landing centerline deviation are wildly off. This is caused by
+    add-on airports, or an updated apt.dat, which moved the runway
+    locations.</p>
+    <p>Since X-Plane does not give plugins information about the locations of
+    runways, the Mission Generator has its own database of runway locations,
+    derived from X-Plane's default apt.dat. Thus, if an add-on moves the
+    runway locations, the Mission Generator won't know about it, and will
+    assume you landed in the wheeds.</p>
+    <p>To fix this, I will add a new menu option to rebuild the scenery
+    database in a future update. But this is a bigger undertaking, and will
+    take a few days.</p>
+    <p>As a nice side benefit, this will make completely new add-on airports
+    available as mission targets as well.</p>
+  </section>
+
+  <section class='post'>
     <h1 class='title'>First Patch</h1>
     <h2 class='date'>2018-09-30</h2>
     <p>I just uploaded a quick bug fix for the most important issues in the
@@ -89,17 +116,8 @@
     code quality as I can in <a href="https://github.com/bastibe">my programming projects</a>.</p>
   </section>
 
-  <section class='post'>
-    <h1 class='title'>Getting the Mission Generator ready for release</h1>
-    <h2 class='date'>2018-09-22</h2>
-    <p>As far as I can tell, all major bugs in the Mission Generator have now
-    been fixed. Now, all that remains is to get this website up and
-    running, and getting the plugin listed on the X-Plane.org Store.</p>
-    <p>This is very exciting, since I have never done a commercial project
-    before, and don't know what to expect!</p>
-  </section>
-
   <section class="navigation">
+    <a class="next" href="news1.html">Next Page</a>
   </section>
 
 <footer>
