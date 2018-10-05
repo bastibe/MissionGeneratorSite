@@ -1,4 +1,27 @@
 ------------------------------------------------------------------------
+title: Third Patch (v1.1.0) (fixes the Centerline Issue)
+date: 2018-10-05
+
+As reported before, the Mission Generator used to report incorrect
+centerline deviations for certain third-party sceneries, and would
+never show some sceneries as mission destinations.
+
+Both of these issues were due to X-Plane not giving plugins
+information about runways, which meant that the Mission Generator used
+its own runway database that I created offline from X-Plane's apt.dat.
+
+Of course, this database would not show any changed runway layouts or
+added runways from third-party sceneries, or X-Plane's own global
+airport updates.
+
+As of v1.1.0, the Mission Generator intelligently reads your installed
+sceneries, and builds a new runway database every time you install a
+new scenery. The process can take a few seconds to finish, but it is
+only run if your scenery changes. If you think it might not have
+picked up on a new scenery, you can also start the rebuild manually
+from the menu bar.
+
+------------------------------------------------------------------------
 title: Second Patch (v1.0.2)
 date: 2018-10-01
 

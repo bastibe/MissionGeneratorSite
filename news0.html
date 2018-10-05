@@ -27,6 +27,26 @@
   <hr>
 
   <section class='post'>
+    <h1 class='title'>Third Patch (v1.1.0) (fixes the Centerline Issue)</h1>
+    <h2 class='date'>2018-10-05</h2>
+    <p>As reported before, the Mission Generator used to report incorrect
+    centerline deviations for certain third-party sceneries, and would
+    never show some sceneries as mission destinations.</p>
+    <p>Both of these issues were due to X-Plane not giving plugins
+    information about runways, which meant that the Mission Generator used
+    its own runway database that I created offline from X-Plane's apt.dat.</p>
+    <p>Of course, this database would not show any changed runway layouts or
+    added runways from third-party sceneries, or X-Plane's own global
+    airport updates.</p>
+    <p>As of v1.1.0, the Mission Generator intelligently reads your installed
+    sceneries, and builds a new runway database every time you install a
+    new scenery. The process can take a few seconds to finish, but it is
+    only run if your scenery changes. If you think it might not have
+    picked up on a new scenery, you can also start the rebuild manually
+    from the menu bar.</p>
+  </section>
+
+  <section class='post'>
     <h1 class='title'>Second Patch (v1.0.2)</h1>
     <h2 class='date'>2018-10-01</h2>
     <ul>
@@ -88,32 +108,6 @@
     comments improved many aspects of the plugin. And I would like to
     thank all the nice commenters on the forums. You have no idea how
     motivating a few positive remarks can be!</p>
-  </section>
-
-  <section class='post'>
-    <h1 class='title'>The code</h1>
-    <h2 class='date'>2018-09-26</h2>
-    <p>The last few days I spent cleaning up the Mission Generator's code, and
-    documenting it thoroughly. One could argue that no-one will look at the
-    code of an X-Plane plugin, anyway, so why document it?</p>
-    <p>But I plan that the initial release of the Mission Generator will only
-    the first step in a long development. Which means that I will work with
-    this code for a long time. Spending some effort now to help future me,
-    who will have forgotten half the intricacies of the Mission Generator,
-    is time well spent.</p>
-    <p>But beyond that, I hope that other people will look at the code, and try
-    to improve things. While the Mission Generator is a commercial piece of
-    software, I give every user express permission to publish improved
-    versions of a few key files. This might, for example, include more
-    varied bonus missions, or more mission templates, or re-balanced
-    versions of the level ups.</p>
-    <p>I also hope that the Mission Generator will encourage people to develop
-    their own plugins. As it turns out, writing plugins for X-Plane is not
-    hard (if you know programming). There are a lot of intricate and
-    interesting algorithms in the Mission Generator, and all of them are now
-    well-documented for intrepid readers.</p>
-    <p>And of course, old habits die hard. I always try to maintain as good a
-    code quality as I can in <a href="https://github.com/bastibe">my programming projects</a>.</p>
   </section>
 
   <section class="navigation">
