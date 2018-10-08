@@ -1,4 +1,29 @@
 ------------------------------------------------------------------------
+title: Fourth Patch (v1.1.1)
+date: 2018-10-08
+
+The last patch (v1.1.0) added the ability to rebuild the Mission
+Generator's scenery database from the actual sceneries' apt.dat files.
+While this fixed many issues, some people had add-on sceneries with
+incorrectly formatted apt.dat files, which tripped up the database
+crawler.
+
+The resulting incomplete scenery database lead to empty mission lists or
+even freezes when opening the mission list (if you had one of those
+malformed sceneries). As always, this problem did not happen on my
+machine, since none of my sceneries had these problems.
+
+Thus, I now added some scenery validation code which should prevent
+malformed apt.dat files from messing up the whole scenery database.
+
+Additionally, the patch fixes a bunch of smaller issues, such as payload
+issues, mission distance issues, and more mission templates. And I have
+a new theory on why the centerline deviation is sometimes way off: It
+might be because the Mission Generator interprets taxiing too fast as
+part of the takeoff roll. If you experience the centerline issue, try
+taxiing slower than 30 km/h (15 kt).
+
+------------------------------------------------------------------------
 title: Third Patch (v1.1.0) (fixes the Centerline Issue)
 date: 2018-10-05
 
