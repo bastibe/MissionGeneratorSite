@@ -4,7 +4,54 @@
 <title>Mission Generator News</title>
 <description>News for the Mission Generator plugin for X-Plane</description>
 <link>https://missiongenerator.eu/news0.html</link>
-<lastBuildDate>Mon, 08 Oct 2018 20:23:16 </lastBuildDate>
+<lastBuildDate>Sat, 20 Oct 2018 16:15:05 </lastBuildDate>
+
+  <item>
+    <title>Fifth Patch (v1.1.2)</title>
+    <pubDate>Sat, 20 Oct 2018 00:00:00 </pubDate>
+    <description><![CDATA[
+<p>It seems that all major issues have actually been resolved as of the
+previous version. Thus, I can now finally focus on refining the
+experience, and start tackling subtler issues and preferences. This
+patch is full of small improvements that don't change the game, but
+should make for a smoother experience.</p>
+<p>For example, there was an interesting issue with helicopters: When a
+helicopter touches down, it immediately finishes the current mission
+and unloads the payload. Normally, this is not an problem. But in
+<em>some</em> cases, with particularly heavy payloads and particularly smooth
+touch downs, taking off the payload would make the helicopter light
+enough to float up again! So with v1.1.2, helicopter missions will
+only finish once touched down <em>and</em> the collective is reduced (see
+settings.lua for the particular threshold).</p>
+<p>Another issue were taxi speeds and cruise speeds. The centerline
+deviation is only calculated if the aircraft is moving faster than the
+taxi speed, but a perfectly reasonable taxi speed for a passenger jet
+will be far beyond the takeoff speed of small ultralights. So now the
+taxi speed is determined either by a minimum of 30 km/h, or a quarter
+of the stall speed, whichever is higher (Again, adjustable in
+settings.lua). Similarly, the cruise speed is now the mean of the
+maneuvering speed and top speed (center of the yellow arc), which is
+probably conservative for turbine-powered aircraft, and a bit too fast
+for piston aircraft, but in any case much better than before.</p>
+<p>A third issue was a real head-scratcher: Sometimes, some X-Plane
+datarefs would apparently contain invalid data. This seems to happen
+randomly, but more often at very low frame rates (which I don't run)
+and in conjunction with a lot of other plugins (which I don't use). As
+such, I could never reproduce these issues. The root cause is probably
+a bug in SASL or X-Plane, and not under my control. And in any case,
+most of the time, these little hickups would not matter much, and
+merely cause a transient error in the X-Plane log or a short flicker
+on the briefing screen. But <em>sometimes</em>, in very rare cases, they
+would block mission progress, or prevent mission success. I have added
+workarounds for these cases, which will hopefully make them
+unproblematic.</p>
+<p>And finally, there are of course a number of additional bug fixes,
+like fixes for the payload name generation, time formatting in the
+briefing and debriefing, overly-unreliable missions, and a renamed
+menu item.</p>
+    ]]>
+    </description>
+  </item>
 
   <item>
     <title>Fourth Patch (v1.1.1)</title>
