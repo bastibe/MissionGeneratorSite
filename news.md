@@ -1,4 +1,102 @@
 ------------------------------------------------------------------------
+title: Seventh Patch (v1.3.1)
+date: 2019-03-31
+
+This is a bugfix update for an issue introduced in v1.2.0, which missed
+a conversion between knots and kilometers per hour in the cruise speed
+estimation code. I am very sorry about that.
+
+This also applies to cruise speeds in `missiongenerator_overrides.lua`,
+which were read as knots, so if you had one of those, you should check
+that they still work correctly.
+
+
+------------------------------------------------------------------------
+title: Seventh Patch (v1.3.0)
+date: 2019-02-27
+
+Up until now, the Mission Generator treated every airport equally.
+Large or small, 2D or 3D, the Mission Generator didn't know the
+difference. This now changes. With this patch, the Mission Generator
+now has some limited knowledge about where a scenery came from,
+according to the following rules:
+
+- If the scenery is part of the base X-Plane scenery, it is a "2D"
+  scenery.
+- If the scenery is part of the "Global Airports" custom scenery, it a
+  "3D" scenery. These are the Scenery Gateway, "Lego-Brick"
+  sceneries.
+- If the scenery is anything else, it is a "Add-On" scenery.
+
+This information is now displayed in the mission briefing, so you have
+a better idea where you are going. Even better, the Mission Generator
+now subtly prefers Add-On sceneries over 3D sceneries over 2D
+sceneries. This should make for more interesting missions!
+
+This patch also introduces three new entries in *settings.lua* for
+tweaking these chances. However, be aware that this does come with a
+few caveats:  
+Firstly, the Mission Generator can only generate missions to existing
+airports, picked at random from the surrounding area. So if there are
+no 3D or Add-On sceneries available in a region, lowering the chances
+for 2D sceneries will simply reduce the number of
+available missions.  
+Secondly, not every "Global Airports"-Lego-Brick scenery does actually
+include 3D objects.  
+So treat these settings with care. Extreme values are probably not
+what you want.
+
+------------------------------------------------------------------------
+title: Sixth Patch (v1.2.0)
+date: 2019-01-05
+
+It's been a while, hasn't it? The last time you heard from me was in
+October. I developed the Mission Generator during paternity leave.
+When I got back to work, I didn't have nearly as much time available
+to keep working on things in my spare time. But that doesn't mean I
+have forgotten about the Mission Generator, just that the pace of
+updates can't be as fast now as it was in the beginning.
+
+Thankfully, it seems that the Mission Generator is actually working
+well for most people! As a result, this update will probably not
+change anything for the majority of users, but fix a few niggling
+issues for some:
+
+A recurring theme in bug reports is that the Mission Generator
+sometimes appears to not know the payload capacity, cruise speed, and
+landing distance of some aircrafts. And in fact, this is exactly true:
+X-Plane simply does not expose this kind of information to plugins.
+Instead, the Mission Generator takes an educated guess, based on the
+available data. And usually, the estimate is pretty accurate, as
+estimates go. But of course, some aircraft with unusual combinations
+of performance numbers are bound to lead to inaccurate estimates.
+
+And there is really nothing the Mission Generator can do about it
+internally. So instead, it now creates a file
+<code>missiongenerator_overrides.lua</code> in every aircraft's
+directory, where you can override the Mission Generator's estimate
+manually. In this file, you can specify your own cruise speed, payload
+capacity, and minimum landing distance for every aircraft, and
+customize it to your liking.
+
+On the same note, due to the variability in guessing the cruise speed,
+urgent missions actually were impossible to complete in some aircraft.
+To improve this, the speed requirements for urgent missions were
+slightly lessened.
+
+And finally, one user pointed me to a rare issue with some third-party
+sceneries with unusual apt.dat formatting that lead to "not at
+starting point" errors in the mission briefing. This has been fixed.
+
+However, there is still that one bug that keeps eluding me: A small
+number of people sometimes get "no landing" or "no takeoff" messages
+in their debriefing. From what I can tell, this error usually goes
+away if they rebuild their X-Plane install, and seems to happen more
+often for small aircraft than for larger ones. But I have not yet been
+able to reproduce this issue myself, and hence don't know yet what
+causes it.
+
+------------------------------------------------------------------------
 title: Fifth Patch (v1.1.2)
 date: 2018-10-20
 
