@@ -4,10 +4,25 @@
 <title>Mission Generator News</title>
 <description>News for the Mission Generator plugin for X-Plane</description>
 <link>https://missiongenerator.eu/news0.html</link>
-<lastBuildDate>Sun, 31 Mar 2019 12:14:05 </lastBuildDate>
+<lastBuildDate>Fri, 03 May 2019 12:23:55 </lastBuildDate>
 
   <item>
-    <title>Seventh Patch (v1.3.1)</title>
+    <title>Nineth Patch (v1.3.2)</title>
+    <pubDate>Wed, 03 Apr 2019 00:00:00 </pubDate>
+    <description><![CDATA[
+<p>This release fixes a crash that happened if the Mission Generator tried
+to access one of the 20 last entries in the airport database on Windows.
+Thank you very much to forum user kekke2000 for helping me track down
+this bug!</p>
+<p>It also fixes a small inaccuracy in the cruise speed estimation, though
+this was probably unnoticeable due to the general inaccuracy of those
+estimates.</p>
+    ]]>
+    </description>
+  </item>
+
+  <item>
+    <title>Eighth Patch (v1.3.1)</title>
     <pubDate>Sun, 31 Mar 2019 00:00:00 </pubDate>
     <description><![CDATA[
 <p>This is a bugfix update for an issue introduced in v1.2.0, which missed

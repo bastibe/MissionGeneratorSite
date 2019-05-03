@@ -1,5 +1,18 @@
 ------------------------------------------------------------------------
-title: Seventh Patch (v1.3.1)
+title: Nineth Patch (v1.3.2)
+date: 2019-04-03
+
+This release fixes a crash that happened if the Mission Generator tried
+to access one of the 20 last entries in the airport database on Windows.
+Thank you very much to forum user kekke2000 for helping me track down
+this bug!
+
+It also fixes a small inaccuracy in the cruise speed estimation, though
+this was probably unnoticeable due to the general inaccuracy of those
+estimates.
+
+------------------------------------------------------------------------
+title: Eighth Patch (v1.3.1)
 date: 2019-03-31
 
 This is a bugfix update for an issue introduced in v1.2.0, which missed
