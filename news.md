@@ -1,4 +1,26 @@
 ------------------------------------------------------------------------
+title: Tenth Patch (v1.3.3)
+date: 2019-09-07
+
+This is a bugfix release, which finally fixes the "unknown airport"
+bug. Some users have experienced a bug where some or all mission
+debriefings showed no bonus points, but instead an error message
+saying "unknown airport". Sadly, I was never able to fix this bug as
+it didn't happen on my computers.
+
+Recently however, the forum user *Montag* posted a [detailed
+analysis](https://forums.x-plane.org/index.php?/forums/topic/164409-unknown-airports/&tab=comments#comment-1731980)
+of the problem as it happened on his computer. As it turns out, on
+some computers, X-Plane would not set the "wheels are on the ground"
+dataref correctly, which would trip up the Mission Generator when it
+tried to calculate landing statistics etc.. This patch now uses an
+altitude-above-ground check instead of the "onground" dataref, which
+should fix the issue.
+
+Furthermore, this patch fixes a few incorrect speed and distance
+displays, which were caused by missing or wrong unit conversions.
+
+------------------------------------------------------------------------
 title: Nineth Patch (v1.3.2)
 date: 2019-04-03
 

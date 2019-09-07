@@ -27,6 +27,26 @@
   <hr>
 
   <section class='post'>
+    <h1 class='title'>Tenth Patch (v1.3.3)</h1>
+    <h2 class='date'>2019-09-07</h2>
+    <p>This is a bugfix release, which finally fixes the "unknown airport"
+    bug. Some users have experienced a bug where some or all mission
+    debriefings showed no bonus points, but instead an error message
+    saying "unknown airport". Sadly, I was never able to fix this bug as
+    it didn't happen on my computers.</p>
+    <p>Recently however, the forum user <em>Montag</em> posted a <a href="https://forums.x-plane.org/index.php?/forums/topic/164409-unknown-airports/&amp;tab=comments#comment-1731980">detailed
+    analysis</a>
+    of the problem as it happened on his computer. As it turns out, on
+    some computers, X-Plane would not set the "wheels are on the ground"
+    dataref correctly, which would trip up the Mission Generator when it
+    tried to calculate landing statistics etc.. This patch now uses an
+    altitude-above-ground check instead of the "onground" dataref, which
+    should fix the issue.</p>
+    <p>Furthermore, this patch fixes a few incorrect speed and distance
+    displays, which were caused by missing or wrong unit conversions.</p>
+  </section>
+
+  <section class='post'>
     <h1 class='title'>Nineth Patch (v1.3.2)</h1>
     <h2 class='date'>2019-04-03</h2>
     <p>This release fixes a crash that happened if the Mission Generator tried
@@ -125,50 +145,6 @@
     often for small aircraft than for larger ones. But I have not yet been
     able to reproduce this issue myself, and hence don't know yet what
     causes it.</p>
-  </section>
-
-  <section class='post'>
-    <h1 class='title'>Fifth Patch (v1.1.2)</h1>
-    <h2 class='date'>2018-10-20</h2>
-    <p>It seems that all major issues have actually been resolved as of the
-    previous version. Thus, I can now finally focus on refining the
-    experience, and start tackling subtler issues and preferences. This
-    patch is full of small improvements that don't change the game, but
-    should make for a smoother experience.</p>
-    <p>For example, there was an interesting issue with helicopters: When a
-    helicopter touches down, it immediately finishes the current mission
-    and unloads the payload. Normally, this is not an problem. But in
-    <em>some</em> cases, with particularly heavy payloads and particularly smooth
-    touch downs, taking off the payload would make the helicopter light
-    enough to float up again! So with v1.1.2, helicopter missions will
-    only finish once touched down <em>and</em> the collective is reduced (see
-    settings.lua for the particular threshold).</p>
-    <p>Another issue were taxi speeds and cruise speeds. The centerline
-    deviation is only calculated if the aircraft is moving faster than the
-    taxi speed, but a perfectly reasonable taxi speed for a passenger jet
-    will be far beyond the takeoff speed of small ultralights. So now the
-    taxi speed is determined either by a minimum of 30 km/h, or a quarter
-    of the stall speed, whichever is higher (Again, adjustable in
-    settings.lua). Similarly, the cruise speed is now the mean of the
-    maneuvering speed and top speed (center of the yellow arc), which is
-    probably conservative for turbine-powered aircraft, and a bit too fast
-    for piston aircraft, but in any case much better than before.</p>
-    <p>A third issue was a real head-scratcher: Sometimes, some X-Plane
-    datarefs would apparently contain invalid data. This seems to happen
-    randomly, but more often at very low frame rates (which I don't run)
-    and in conjunction with a lot of other plugins (which I don't use). As
-    such, I could never reproduce these issues. The root cause is probably
-    a bug in SASL or X-Plane, and not under my control. And in any case,
-    most of the time, these little hickups would not matter much, and
-    merely cause a transient error in the X-Plane log or a short flicker
-    on the briefing screen. But <em>sometimes</em>, in very rare cases, they
-    would block mission progress, or prevent mission success. I have added
-    workarounds for these cases, which will hopefully make them
-    unproblematic.</p>
-    <p>And finally, there are of course a number of additional bug fixes,
-    like fixes for the payload name generation, time formatting in the
-    briefing and debriefing, overly-unreliable missions, and a renamed
-    menu item.</p>
   </section>
 
   <section class="navigation">

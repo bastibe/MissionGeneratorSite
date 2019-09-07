@@ -4,7 +4,30 @@
 <title>Mission Generator News</title>
 <description>News for the Mission Generator plugin for X-Plane</description>
 <link>https://missiongenerator.eu/news0.html</link>
-<lastBuildDate>Fri, 03 May 2019 12:23:55 </lastBuildDate>
+<lastBuildDate>Sat, 07 Sep 2019 22:22:16 </lastBuildDate>
+
+  <item>
+    <title>Tenth Patch (v1.3.3)</title>
+    <pubDate>Sat, 07 Sep 2019 00:00:00 </pubDate>
+    <description><![CDATA[
+<p>This is a bugfix release, which finally fixes the "unknown airport"
+bug. Some users have experienced a bug where some or all mission
+debriefings showed no bonus points, but instead an error message
+saying "unknown airport". Sadly, I was never able to fix this bug as
+it didn't happen on my computers.</p>
+<p>Recently however, the forum user <em>Montag</em> posted a <a href="https://forums.x-plane.org/index.php?/forums/topic/164409-unknown-airports/&amp;tab=comments#comment-1731980">detailed
+analysis</a>
+of the problem as it happened on his computer. As it turns out, on
+some computers, X-Plane would not set the "wheels are on the ground"
+dataref correctly, which would trip up the Mission Generator when it
+tried to calculate landing statistics etc.. This patch now uses an
+altitude-above-ground check instead of the "onground" dataref, which
+should fix the issue.</p>
+<p>Furthermore, this patch fixes a few incorrect speed and distance
+displays, which were caused by missing or wrong unit conversions.</p>
+    ]]>
+    </description>
+  </item>
 
   <item>
     <title>Nineth Patch (v1.3.2)</title>
