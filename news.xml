@@ -4,7 +4,28 @@
 <title>Mission Generator News</title>
 <description>News for the Mission Generator plugin for X-Plane</description>
 <link>https://missiongenerator.eu/news0.html</link>
-<lastBuildDate>Sat, 07 Sep 2019 22:22:16 </lastBuildDate>
+<lastBuildDate>Sun, 26 Jan 2020 12:26:13 </lastBuildDate>
+
+  <item>
+    <title>Eleventh Patch (v1.3.4)</title>
+    <pubDate>Sun, 26 Jan 2020 00:00:00 </pubDate>
+    <description><![CDATA[
+<p>The Mission Generator's bug tracker has been very quiet in the last
+few months. But very occasionally, the mission list would not pop up
+for a small number of users, and the log would show an error message
+saying <code>attempt to perform arithmetic on local 'lon1' (a nil value)</code>.
+But none of my computers would ever show this message, so I couldn't
+investigate it.</p>
+<p>However, things changed when forum user <em>Luke173</em> worked with me for
+several weeks to investigate the issue as it was happening on his
+computer. And with his help, we finally found a solution: On some
+installations on macOS, the last entry in the landmarks database could
+not be read, which lead to an error whenever a sightseeing bonus
+mission was generated.</p>
+<p>Today's patch fixes this issue. Many thanks to Luke173 for his help!</p>
+    ]]>
+    </description>
+  </item>
 
   <item>
     <title>Tenth Patch (v1.3.3)</title>

@@ -27,6 +27,24 @@
   <hr>
 
   <section class='post'>
+    <h1 class='title'>Eleventh Patch (v1.3.4)</h1>
+    <h2 class='date'>2020-01-26</h2>
+    <p>The Mission Generator's bug tracker has been very quiet in the last
+    few months. But very occasionally, the mission list would not pop up
+    for a small number of users, and the log would show an error message
+    saying <code>attempt to perform arithmetic on local 'lon1' (a nil value)</code>.
+    But none of my computers would ever show this message, so I couldn't
+    investigate it.</p>
+    <p>However, things changed when forum user <em>Luke173</em> worked with me for
+    several weeks to investigate the issue as it was happening on his
+    computer. And with his help, we finally found a solution: On some
+    installations on macOS, the last entry in the landmarks database could
+    not be read, which lead to an error whenever a sightseeing bonus
+    mission was generated.</p>
+    <p>Today's patch fixes this issue. Many thanks to Luke173 for his help!</p>
+  </section>
+
+  <section class='post'>
     <h1 class='title'>Tenth Patch (v1.3.3)</h1>
     <h2 class='date'>2019-09-07</h2>
     <p>This is a bugfix release, which finally fixes the "unknown airport"
@@ -101,50 +119,6 @@
     include 3D objects.<br />
     So treat these settings with care. Extreme values are probably not
     what you want.</p>
-  </section>
-
-  <section class='post'>
-    <h1 class='title'>Sixth Patch (v1.2.0)</h1>
-    <h2 class='date'>2019-01-05</h2>
-    <p>It's been a while, hasn't it? The last time you heard from me was in
-    October. I developed the Mission Generator during paternity leave.
-    When I got back to work, I didn't have nearly as much time available
-    to keep working on things in my spare time. But that doesn't mean I
-    have forgotten about the Mission Generator, just that the pace of
-    updates can't be as fast now as it was in the beginning.</p>
-    <p>Thankfully, it seems that the Mission Generator is actually working
-    well for most people! As a result, this update will probably not
-    change anything for the majority of users, but fix a few niggling
-    issues for some:</p>
-    <p>A recurring theme in bug reports is that the Mission Generator
-    sometimes appears to not know the payload capacity, cruise speed, and
-    landing distance of some aircrafts. And in fact, this is exactly true:
-    X-Plane simply does not expose this kind of information to plugins.
-    Instead, the Mission Generator takes an educated guess, based on the
-    available data. And usually, the estimate is pretty accurate, as
-    estimates go. But of course, some aircraft with unusual combinations
-    of performance numbers are bound to lead to inaccurate estimates.</p>
-    <p>And there is really nothing the Mission Generator can do about it
-    internally. So instead, it now creates a file
-    <code>missiongenerator_overrides.lua</code> in every aircraft's
-    directory, where you can override the Mission Generator's estimate
-    manually. In this file, you can specify your own cruise speed, payload
-    capacity, and minimum landing distance for every aircraft, and
-    customize it to your liking.</p>
-    <p>On the same note, due to the variability in guessing the cruise speed,
-    urgent missions actually were impossible to complete in some aircraft.
-    To improve this, the speed requirements for urgent missions were
-    slightly lessened.</p>
-    <p>And finally, one user pointed me to a rare issue with some third-party
-    sceneries with unusual apt.dat formatting that lead to "not at
-    starting point" errors in the mission briefing. This has been fixed.</p>
-    <p>However, there is still that one bug that keeps eluding me: A small
-    number of people sometimes get "no landing" or "no takeoff" messages
-    in their debriefing. From what I can tell, this error usually goes
-    away if they rebuild their X-Plane install, and seems to happen more
-    often for small aircraft than for larger ones. But I have not yet been
-    able to reproduce this issue myself, and hence don't know yet what
-    causes it.</p>
   </section>
 
   <section class="navigation">

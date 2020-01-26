@@ -1,4 +1,24 @@
 ------------------------------------------------------------------------
+title: Eleventh Patch (v1.3.4)
+date: 2020-01-26
+
+The Mission Generator's bug tracker has been very quiet in the last
+few months. But very occasionally, the mission list would not pop up
+for a small number of users, and the log would show an error message
+saying `attempt to perform arithmetic on local 'lon1' (a nil value)`.
+But none of my computers would ever show this message, so I couldn't
+investigate it.
+
+However, things changed when forum user *Luke173* worked with me for
+several weeks to investigate the issue as it was happening on his
+computer. And with his help, we finally found a solution: On some
+installations on macOS, the last entry in the landmarks database could
+not be read, which lead to an error whenever a sightseeing bonus
+mission was generated.
+
+Today's patch fixes this issue. Many thanks to Luke173 for his help!
+
+------------------------------------------------------------------------
 title: Tenth Patch (v1.3.3)
 date: 2019-09-07
 
