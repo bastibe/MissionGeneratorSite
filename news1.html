@@ -27,6 +27,40 @@
   <hr>
 
   <section class='post'>
+    <h1 class='title'>Seventh Patch (v1.3.0)</h1>
+    <h2 class='date'>2019-02-27</h2>
+    <p>Up until now, the Mission Generator treated every airport equally.
+    Large or small, 2D or 3D, the Mission Generator didn't know the
+    difference. This now changes. With this patch, the Mission Generator
+    now has some limited knowledge about where a scenery came from,
+    according to the following rules:</p>
+    <ul>
+    <li>If the scenery is part of the base X-Plane scenery, it is a "2D"
+      scenery.</li>
+    <li>If the scenery is part of the "Global Airports" custom scenery, it a
+      "3D" scenery. These are the Scenery Gateway, "Lego-Brick"
+      sceneries.</li>
+    <li>If the scenery is anything else, it is a "Add-On" scenery.</li>
+    </ul>
+    <p>This information is now displayed in the mission briefing, so you have
+    a better idea where you are going. Even better, the Mission Generator
+    now subtly prefers Add-On sceneries over 3D sceneries over 2D
+    sceneries. This should make for more interesting missions!</p>
+    <p>This patch also introduces three new entries in <em>settings.lua</em> for
+    tweaking these chances. However, be aware that this does come with a
+    few caveats:<br />
+    Firstly, the Mission Generator can only generate missions to existing
+    airports, picked at random from the surrounding area. So if there are
+    no 3D or Add-On sceneries available in a region, lowering the chances
+    for 2D sceneries will simply reduce the number of
+    available missions.<br />
+    Secondly, not every "Global Airports"-Lego-Brick scenery does actually
+    include 3D objects.<br />
+    So treat these settings with care. Extreme values are probably not
+    what you want.</p>
+  </section>
+
+  <section class='post'>
     <h1 class='title'>Sixth Patch (v1.2.0)</h1>
     <h2 class='date'>2019-01-05</h2>
     <p>It's been a while, hasn't it? The last time you heard from me was in
@@ -154,14 +188,6 @@
     only run if your scenery changes. If you think it might not have
     picked up on a new scenery, you can also start the rebuild manually
     from the menu bar.</p>
-  </section>
-
-  <section class='post'>
-    <h1 class='title'>Second Patch (v1.0.2)</h1>
-    <h2 class='date'>2018-10-01</h2>
-    <ul>
-    <li>Fixes debriefing issue (thank you, shaja, for finding and <a href="https://forums.x-plane.org/index.php?/forums/topic/159020-not-recognizing-completed-missions/&amp;do=findComment&amp;comment=1495812">fixing</a> it!)</li>
-    </ul>
   </section>
 
   <section class="navigation">

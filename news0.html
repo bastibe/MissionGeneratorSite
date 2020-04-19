@@ -27,6 +27,23 @@
   <hr>
 
   <section class='post'>
+    <h1 class='title'>Twelvth Patch (v1.4.0)</h1>
+    <h2 class='date'>2020-04-19</h2>
+    <p>This patch is a big one: BETA VR support!</p>
+    <p>The Mission Generator is now available in two versions: One compatible
+    with XP10 and XP11, looking and behaving just as it always has. And a
+    new, XP11-only version, that is VR compatible. The VR version is still
+    a beta version, and not as pretty as the old version: It uses XP11's
+    new and shiny floating windows that can be popped out of XP11's main
+    window, and positioned on VR. The downside is, these windows currently
+    draw a rather big and ugly border around the Mission Generator's
+    windows. That's why it's still a beta version.</p>
+    <p>But you can now fly missions entirely in VR!</p>
+    <p>Also, this version fixes a bug that would sometimes corrupt the pilot
+    profile with NaN experience points. This should not happen again.</p>
+  </section>
+
+  <section class='post'>
     <h1 class='title'>Eleventh Patch (v1.3.4)</h1>
     <h2 class='date'>2020-01-26</h2>
     <p>The Mission Generator's bug tracker has been very quiet in the last
@@ -85,40 +102,6 @@
     <p>This also applies to cruise speeds in <code>missiongenerator_overrides.lua</code>,
     which were read as knots, so if you had one of those, you should check
     that they still work correctly.</p>
-  </section>
-
-  <section class='post'>
-    <h1 class='title'>Seventh Patch (v1.3.0)</h1>
-    <h2 class='date'>2019-02-27</h2>
-    <p>Up until now, the Mission Generator treated every airport equally.
-    Large or small, 2D or 3D, the Mission Generator didn't know the
-    difference. This now changes. With this patch, the Mission Generator
-    now has some limited knowledge about where a scenery came from,
-    according to the following rules:</p>
-    <ul>
-    <li>If the scenery is part of the base X-Plane scenery, it is a "2D"
-      scenery.</li>
-    <li>If the scenery is part of the "Global Airports" custom scenery, it a
-      "3D" scenery. These are the Scenery Gateway, "Lego-Brick"
-      sceneries.</li>
-    <li>If the scenery is anything else, it is a "Add-On" scenery.</li>
-    </ul>
-    <p>This information is now displayed in the mission briefing, so you have
-    a better idea where you are going. Even better, the Mission Generator
-    now subtly prefers Add-On sceneries over 3D sceneries over 2D
-    sceneries. This should make for more interesting missions!</p>
-    <p>This patch also introduces three new entries in <em>settings.lua</em> for
-    tweaking these chances. However, be aware that this does come with a
-    few caveats:<br />
-    Firstly, the Mission Generator can only generate missions to existing
-    airports, picked at random from the surrounding area. So if there are
-    no 3D or Add-On sceneries available in a region, lowering the chances
-    for 2D sceneries will simply reduce the number of
-    available missions.<br />
-    Secondly, not every "Global Airports"-Lego-Brick scenery does actually
-    include 3D objects.<br />
-    So treat these settings with care. Extreme values are probably not
-    what you want.</p>
   </section>
 
   <section class="navigation">

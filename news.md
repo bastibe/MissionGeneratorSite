@@ -1,4 +1,24 @@
 ------------------------------------------------------------------------
+title: Twelvth Patch (v1.4.0)
+date: 2020-04-19
+
+This patch is a big one: BETA VR support!
+
+The Mission Generator is now available in two versions: One compatible
+with XP10 and XP11, looking and behaving just as it always has. And a
+new, XP11-only version, that is VR compatible. The VR version is still
+a beta version, and not as pretty as the old version: It uses XP11's
+new and shiny floating windows that can be popped out of XP11's main
+window, and positioned on VR. The downside is, these windows currently
+draw a rather big and ugly border around the Mission Generator's
+windows. That's why it's still a beta version.
+
+But you can now fly missions entirely in VR!
+
+Also, this version fixes a bug that would sometimes corrupt the pilot
+profile with NaN experience points. This should not happen again.
+
+------------------------------------------------------------------------
 title: Eleventh Patch (v1.3.4)
 date: 2020-01-26
 
