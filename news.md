@@ -1,4 +1,20 @@
 ------------------------------------------------------------------------
+title: Thirteenth Patch (v1.5.0)
+date: 2020-07-30
+
+Some users who were flying bush planes and liked to practice
+short-field landings and takeoffs, sometimes encountered a bug where
+the Mission Generator wasn't able to tell which runway they used. This
+resulted in an `[unknown airport]` in the takeoff or landing statistic
+in the debriefing. With the gracious help of the forum users petrivka
+and pa4tim, this problem could finally be fixed.
+
+Secondly, this update brings VR support out of beta. The VR/XP11
+version is now just as beautiful as the legacy XP10 version, but with
+better window management and VR support. I would now recommend all
+XP11 users to upgrade to the XP11 version.
+
+------------------------------------------------------------------------
 title: Twelvth Patch (v1.4.0)
 date: 2020-04-19
 

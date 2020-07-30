@@ -27,6 +27,17 @@
   <hr>
 
   <section class='post'>
+    <h1 class='title'>Eighth Patch (v1.3.1)</h1>
+    <h2 class='date'>2019-03-31</h2>
+    <p>This is a bugfix update for an issue introduced in v1.2.0, which missed
+    a conversion between knots and kilometers per hour in the cruise speed
+    estimation code. I am very sorry about that.</p>
+    <p>This also applies to cruise speeds in <code>missiongenerator_overrides.lua</code>,
+    which were read as knots, so if you had one of those, you should check
+    that they still work correctly.</p>
+  </section>
+
+  <section class='post'>
     <h1 class='title'>Seventh Patch (v1.3.0)</h1>
     <h2 class='date'>2019-02-27</h2>
     <p>Up until now, the Mission Generator treated every airport equally.
@@ -168,26 +179,6 @@
     might be because the Mission Generator interprets taxiing too fast as
     part of the takeoff roll. If you experience the centerline issue, try
     taxiing slower than 30 km/h (15 kt).</p>
-  </section>
-
-  <section class='post'>
-    <h1 class='title'>Third Patch (v1.1.0) (fixes the Centerline Issue)</h1>
-    <h2 class='date'>2018-10-05</h2>
-    <p>As reported before, the Mission Generator used to report incorrect
-    centerline deviations for certain third-party sceneries, and would
-    never show some sceneries as mission destinations.</p>
-    <p>Both of these issues were due to X-Plane not giving plugins
-    information about runways, which meant that the Mission Generator used
-    its own runway database that I created offline from X-Plane's apt.dat.</p>
-    <p>Of course, this database would not show any changed runway layouts or
-    added runways from third-party sceneries, or X-Plane's own global
-    airport updates.</p>
-    <p>As of v1.1.0, the Mission Generator intelligently reads your installed
-    sceneries, and builds a new runway database every time you install a
-    new scenery. The process can take a few seconds to finish, but it is
-    only run if your scenery changes. If you think it might not have
-    picked up on a new scenery, you can also start the rebuild manually
-    from the menu bar.</p>
   </section>
 
   <section class="navigation">
