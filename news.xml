@@ -4,7 +4,21 @@
 <title>Mission Generator News</title>
 <description>News for the Mission Generator plugin for X-Plane</description>
 <link>https://missiongenerator.eu/news0.html</link>
-<lastBuildDate>Thu, 30 Jul 2020 13:51:00 </lastBuildDate>
+<lastBuildDate>Wed, 13 Jan 2021 11:39:18 </lastBuildDate>
+
+  <item>
+    <title>Fourteenth Patch (v1.5.1)</title>
+    <pubDate>Wed, 13 Jan 2021 00:00:00 </pubDate>
+    <description><![CDATA[
+<p>A recent change in X-Plane's scenery database added airports without
+ICAO codes, and airports with multiple codes. These airports caused the
+Mission Generator to not display a mission list, or show an incomplete
+mission briefing without an [accept] button.</p>
+<p>With the gracious help of forum user Gary Hensley, this patch fixes
+these issues.</p>
+    ]]>
+    </description>
+  </item>
 
   <item>
     <title>Thirteenth Patch (v1.5.0)</title>

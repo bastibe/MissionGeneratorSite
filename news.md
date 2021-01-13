@@ -1,4 +1,16 @@
 ------------------------------------------------------------------------
+title: Fourteenth Patch (v1.5.1)
+date: 2021-01-13
+
+A recent change in X-Plane's scenery database added airports without
+ICAO codes, and airports with multiple codes. These airports caused the
+Mission Generator to not display a mission list, or show an incomplete
+mission briefing without an \[accept\] button.
+
+With the gracious help of forum user Gary Hensley, this patch fixes
+these issues.
+
+------------------------------------------------------------------------
 title: Thirteenth Patch (v1.5.0)
 date: 2020-07-30
 
